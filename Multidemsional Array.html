@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multidemsional Array</title>
+</head>
+<body>
+    <script>
+        var arr = [
+            ["Ahmad", 21,"Male", "Bscs"],
+            ["Asad", 20, "Male", "Intermediate"],
+            ["Wahab", 19, "Male", "Desiging"],
+            ["Ali", 20, "Male", "BBA."]
+        ];
+        document.write("<table border='1px' cellspacing='0'>");
+        for(var a=0; a<arr.length ; a++){
+            document.write("<tr>");
+            for(var b=0; b<arr[a].length ; b++){
+                document.write("<td>"+ arr[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
